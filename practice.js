@@ -47,7 +47,29 @@ function canFreePrisoner(
   return (petDogIsPresent && !archerIsAwake) || (!petDogIsPresent && prisonerIsAwake && !knightIsAwake && !archerIsAwake);
 }
 
+// Freelancer rates
+function dayRate(ratePerHour) {
+  const ratePerDay=ratePerHour*8;
+   return ratePerDay;
+ }
+ dayRate(89);
 
+ function daysInBudget(budget, ratePerHour) {
+  const totalBudget=budget;
+const hourlyRate=ratePerHour*8;
+return Math.floor(totalBudget/hourlyRate);
+}
+daysInBudget(20000,89);
+
+function priceWithMonthlyDiscount(ratePerHour, numDays, discount) {
+  let numberOfDays=22;
+  let ratePerDay=ratePerHour*8;
+  let months=Math.floor(numDays/22);
+  let remainingDays=numDays%22;
+  let monthlyDiscount=(months*22*ratePerDay)*(1-discount)
+  return Math.ceil(monthlyDiscount+(remainingDays*ratePerDay));
+  }
+  priceWithMonthlyDiscount(89, 230, 0.42);
 
 
 
