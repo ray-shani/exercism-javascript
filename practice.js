@@ -25,6 +25,45 @@ function totalTimeInMinutes(layers,minutes){
 const answer3=totalTimeInMinutes(10,40);
 console.log(answer3);
 
+// ANNALYNS INFILTRATION EXCERCISE 3
+function canExecuteFastAttack(knightIsAwake) {
+  return !knightIsAwake;
+}
+
+function canSpy(knightIsAwake, archerIsAwake, prisonerIsAwake) {
+  return knightIsAwake||archerIsAwake||prisonerIsAwake;
+ }
+
+ function canSignalPrisoner(archerIsAwake, prisonerIsAwake) {
+  return !archerIsAwake && prisonerIsAwake;
+}
+
+function canFreePrisoner( 
+  knightIsAwake,
+  archerIsAwake,
+  prisonerIsAwake,
+  petDogIsPresent
+ ) {
+  return (petDogIsPresent && !archerIsAwake) || (!petDogIsPresent && prisonerIsAwake && !knightIsAwake && !archerIsAwake);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // // Third exercise
 // function daysInBudget(budget, ratePerHour) {
 //   const totalBudget=budget;
