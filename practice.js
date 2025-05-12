@@ -71,19 +71,17 @@ function priceWithMonthlyDiscount(ratePerHour, numDays, discount) {
   }
   priceWithMonthlyDiscount(89, 230, 0.42);
 
+  //  Changing things to uppercase
+  // function frontDoorPassword(word) {
 
-
-
-
-
-
-
-
-
-
-
-
-
+  //   return toUpperCase(word);
+  // }
+  // const paragraph=frontDoorPassword("Stands so high"+
+  // "Huge hooves too"+
+  // "Impatiently waits for"+
+  // "Reins and harness"+
+  // "Eager to leave");
+  // console.log(paragraph);
 
 
 // // Third exercise
@@ -118,3 +116,24 @@ function priceWithMonthlyDiscount(ratePerHour, numDays, discount) {
 //    }
 //    const test=frontDoorPassword("cookie");
 //    console.log(test);
+
+
+//  The fizzbuzz challenge(Trial)
+var array=[];
+var start=0;
+function fizzbuzz(){
+  let numbers=array.push(start)+1;
+    if(array%3===0){
+      return "Fizz";
+    }
+    if(array%5===0){
+      return "Buzz";
+    }
+    else if (array%3===0&&array%5===0){
+      return "FizzBuzz";
+    }
+    else{
+      return array;
+    }
+  }
+ 
